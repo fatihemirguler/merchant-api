@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MerchantAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MerchantAPI.V1.Controllers.MerchantController.GetOne(System.String)">
+            <summary>
+            Returns one particular merchant in the system
+            </summary>
+            <param name="id"></param>
+            <response code="404">Merchant couldn't be found</response>
+        </member>
+        <member name="M:MerchantAPI.V1.Controllers.MerchantController.GetAll(MerchantAPI.Filters.FilterParams)">
+            <summary>
+            Returns all merchants with filters
+            </summary>
+            <response code="404">Merchant couldn't be found</response>
+        </member>
+        <member name="M:MerchantAPI.V1.Controllers.MerchantController.Create(MerchantAPI.V1.Models.RequestModels.MerchantCreateRequestModel)">
+            <summary>
+            Creates a merchant in the system
+            </summary>
+            <response code="201">Creates a merchant in the system</response>
+            <response code="400">Unable to create merchant due to validation error</response>
+        </member>
+        <member name="M:MerchantAPI.V1.Controllers.MerchantController.Update(System.String,MerchantAPI.V1.Models.RequestModels.MerchantUpdateRequestModel)">
+            <summary>
+            Updates merchant in the system
+            </summary>
+            <response code="200">Updates merchant in the system</response>
+            <response code="400">Unable to update merchant due to validation error</response>
+            <response code="404">Merchant couldn't be found</response>
+        </member>
+        <member name="M:MerchantAPI.V1.Controllers.MerchantController.UpdateAddress(System.String,MerchantAPI.V1.Models.RequestModels.MerchantAddressUpdateRequestModel)">
+            <summary>
+            Updates address of merchant in the system
+            </summary>
+            <response code="200">Updates address of merchant in the system</response>
+            <response code="400">Unable to create merchant due to validation error</response>
+            <response code="404">Merchant couldn't be found</response>
+        </member>
+        <member name="M:MerchantAPI.V1.Controllers.MerchantController.Delete(System.String)">
+            <summary>
+            Deletes one particular merchant in the system
+            </summary>
+            <response code="200">Deletes one particular merchant in the system</response>
+            <response code="404">Merchant couldn't be found</response>
+        </member>
+    </members>
+</doc>
